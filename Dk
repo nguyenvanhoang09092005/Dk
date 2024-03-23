@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Đăng ký</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form id="signup-form" action="main.php" method="post">
+          <h1>Tạo tài khoản</h1>
+          <div class="social-icon">
+            <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-vk"></i></a>
+          </div>
+          <span>hoặc sử dụng email của bạn để đăng ký</span>
+          <input type="text" id="signup-name" placeholder="Name" />
+          <input type="email" id="signup-email" placeholder="Email" />
+          <input type="password" id="signup-password" placeholder="Password" />
+          <button type="button" onclick="register()">Đăng ký</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form id="signin-form" action="main.php" method="post">
+          <h1>Đăng nhập</h1>
+          <div class="social-icon">
+            <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-vk"></i></a>
+          </div>
+          <span>hoặc sử dụng mật khẩu email của bạn</span>
+          <input type="email" id="signin-email" placeholder="Email" />
+          <input type="password" id="signin-password" placeholder="Password" />
+          <a href="#">Quên mật khẩu</a>
+          <button type="button" onclick="login()">Đăng nhập</button>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Chào mừng trở lại!</h1>
+            <p>
+              Nhập thông tin cá nhân của bạn để truy cập vào trang web cafe Đá
+              Cuội
+            </p>
+            <button class="hidden" id="login">Đăng Nhập</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Chào bạn!</h1>
+            <p>
+              Đăng ký thông tin cá nhân của bạn để có thể truy cập vào trang web
+              cafe Đá Cuội
+            </p>
+            <button class="hidden" id="register">ĐĂNG KÝ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
